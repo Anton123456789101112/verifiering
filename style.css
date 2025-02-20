@@ -1,0 +1,212 @@
+body {
+    background-color: #0b2028;
+    margin: 0;
+    padding: 0;
+}
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+    }
+
+.outermenu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 11%;
+    background-color: #213e4c;
+}
+
+.innermenu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+    bottom: 0;
+    height: 100%;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 115%;
+    font-style: normal;
+    margin: 0;
+}
+
+.logo {
+    position: relative;
+    height: 40%;
+    margin-right: 4%;
+}
+
+.back {
+    font-weight: 300;
+    margin: 0;
+    margin-left: 4%;
+
+}
+
+.head {
+    margin: 0;
+}
+
+.ff {
+    margin-bottom: 4%;
+}
+
+.contentbox {
+    position: absolute;
+    top: 11%;
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.imagebox {
+position: absolute;
+width: auto;
+height: 40.2%;
+margin-top: 6%;
+background-color: white;
+display: flex;
+}
+
+.image {
+    position: relative;
+    height: 100%;
+    bottom: 0;
+}
+
+.Ver {
+    position: absolute;
+    width: 26%;
+    z-index: 2;
+    bottom: -3%;
+    right: -10%;
+}
+
+.textbox {
+    position: absolute;
+    top: 48%;
+    height: 20%;
+    width: 70%;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 190%;
+    font-style: normal;
+    margin: 0;
+}
+
+.dd {
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.pntext {
+    font-weight: 300;
+}
+
+.btncont1 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    height: 7%;
+    top: 77%;
+}
+
+.btnbox1 {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    background-color: #8fc3db00;
+    color: #8fc3db;
+    border-style: solid;
+    border-color: #8fc3db;
+    border-width: 0.5%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 115%;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btncont2 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    height: 7%;
+    top: 87%;
+}
+
+.btnbox2 {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    background-color: #8fc3db;
+    color: #0b2028;
+    border-style: solid;
+    border-color: #8fc3db;
+    border-width: 0.5%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 115%;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.finalLoading1 {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #20202079;
+}
+
+.finalloadingcont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    top: calc(50% - 30% / 2);
+}
+
+.loadingani2 {
+    width: 30%;
+    z-index: 30;
+    visibility: visible;
+}
