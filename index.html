@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankID</title>
+    <link rel="icon" type="image/png" href="assets/logowhite.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+
+</style>
+<body>
+
+    <div class="container">
+        <div id="finalLoading1" class="finalLoading1">
+            <div class="finalloadingcont">
+                <img id="loadingcir2" class="loadingani2" src="assets/loading.gif" alt="">
+            </div>
+        </div>
+        <div class="outermenu">
+            <div class="innermenu">
+                <p class="back ff" onclick="history.back()">Tillbaka</p>
+                <p class="head ff">ID verifiering</p>
+                <img class="logo ff" src="assets/logowhite.png" alt="">
+            </div>
+        </div>
+        <div class="contentbox">
+            <div class="imagebox">
+                <img class="image" src="assets/Foto1.png" alt="">
+                <img class="Ver" src="assets/verified.png" alt="">
+            </div>
+            <div class="textbox">
+                <p class="agename dd">Erik Holst Markenljung</p> <!-- NAMN!!-->
+                <p class="pntext dd" id="pntext">Laddar...</p>
+                <p class="age dd">18 år</p>
+            </div>
+            <div class="btncont1">
+                <div onclick="load()" class="btnbox1">
+                    <span class="btntext1">Skanna en annan QR-kod</span>
+                </div>
+            </div>
+            <div class="btncont2">
+                <div onclick="window.close()" class="btnbox2">
+                    <span class="btntext2">Stäng</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+        let personnummerOF = 200701084047; // Personnummer!!!!
+        personnummerOF = String(personnummerOF); 
+        let personnummerF = personnummerOF.slice(2, 8) + "-" + personnummerOF.slice(8);
+        document.getElementById("pntext").innerHTML = `${personnummerF}`;
+        });
+
+        function load() {
+            var loadingcir = document.getElementById('finalLoading1');
+            loadingcir.style.display = 'block';
+
+            setTimeout(() => {
+                loadingcir.style.display = 'none';
+                setTimeout(() => {
+                alert("Något gick fel!")
+            }, 50);
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
